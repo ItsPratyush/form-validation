@@ -27,6 +27,8 @@ document.getElementById("registerForm")
             showError("confirmPasswordError", "Passwords do not match.");
             isValid = false;
         }
+
+        if(isValid) alert("Form submitted successfully!");
     });
 
     function showError(id, message) {
