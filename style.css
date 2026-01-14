@@ -32,3 +32,54 @@ button {
     color: red;
     font-size: 12px;
 }
+
+.slider {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+}
+
+.slide {
+    width: 100%;
+    transition : 0.5s;
+    flex-shrink: 0;
+}
+
+input[name = "slider"] {
+    display: none;
+}
+
+#slide1:checked ~ .slider .s1 {
+    /* transform: translateX(0%); */
+    margin-left: 0;
+}
+#slide2:checked ~ .slider .s1 {
+    /* transform: translateX(-100%); */
+    margin-left: -100%;
+}
+#slide3:checked ~ .slider .s1 {
+    /* transform: translateX(-200%); */
+    margin-left: -200%;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.navigation label {
+    background: gray;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#slide1:checked ~ .nagivation label[for = "slide1"],
+#slide2:checked ~ .nagivation label[for = "slide2"],
+#slide3:checked ~ .nagivation label[for = "slide3"] {
+    background: black;
+}
