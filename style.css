@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-    width: 300px;
+    width: 800px;
     margin: 50px auto;
     background-color: wheat;
     padding: 20px;
@@ -32,6 +32,9 @@ button {
     color: red;
     font-size: 12px;
 }
+
+
+/* ----------IMAGE SLIDER---------- */
 
 .slider {
     width: 100%;
@@ -82,4 +85,58 @@ input[name = "slider"] {
 #slide2:checked ~ .nagivation label[for = "slide2"],
 #slide3:checked ~ .nagivation label[for = "slide3"] {
     background: black;
+}
+
+/* ----------NAVIGATION BAR---------- */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px
+}
+
+.nav-logo {
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+/* ----------ABOUT PAGE---------- */
+.profile-card {
+    max-width: 300px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.profile-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-card .role {
+    color: gray;
+    .profile-card .bio {
+        font-size: 14px;
+    }
 }
